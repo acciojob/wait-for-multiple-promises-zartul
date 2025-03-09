@@ -15,7 +15,7 @@ const promises = [createPromise(), createPromise(), createPromise()];
       const tableBody = document.getElementById('output');
       tableBody.innerHTML = ''; // Clear loading row
       
-      // Populate the table with results
+
       times.forEach((time, index) => {
         const row = document.createElement('tr');
         const promiseCell = document.createElement('td');
@@ -29,7 +29,7 @@ const promises = [createPromise(), createPromise(), createPromise()];
         tableBody.appendChild(row);
       });
       
-      // Calculate total time and add the total row
+
       const totalTime = Math.max(...times);
       const totalRow = document.createElement('tr');
       const totalCell1 = document.createElement('td');
